@@ -48,7 +48,7 @@ int main() {
             "abc -liberty cmos_cells.lib\n",
             "opt_clean\n",
             "stat -liberty cmos_cells.lib\n",
-            "write_verilog synth.v\n"
+            "write_verilog "+ moduleName + "_synth.v\n"
         };
 
         for (const std::string& command : commands) {
